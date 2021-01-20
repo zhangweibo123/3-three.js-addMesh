@@ -8,6 +8,7 @@
     <script src="./OrbitControls.js"></script>
     <script src="./stats.min.js"></script>
     <script src="./initThree.js"></script>
+    <script src="./clickline.js"></script>
     <title>init</title>
     <style>
       #three {
@@ -28,6 +29,7 @@
     // @Param blooen 是否显示坐标系
     // @Param blooen 是否显示渲染帧率
     init(500, 400, true, true);
+    lineInit();
     // 定义材质
     var geometry = new THREE.PlaneBufferGeometry(500, 500);
     var material = new THREE.MeshPhongMaterial({
